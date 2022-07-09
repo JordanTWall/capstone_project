@@ -162,27 +162,51 @@ body {
   background-color: #311f16;
   border-bottom: 3px black solid;
   border-top: 3px black solid;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 #project1 {
   padding-right: 260px;
   padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 #project3 {
   padding-right: 260px;
+  padding-bottom: 40px;
  
 }
 
 .about-hero {
-  background-image: url(./images/remy_loz-backgroundtinted.jpg);
+  background-color: #311f16;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  height: 100vh;
-  padding-top: 100px;
+  height: 466px;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 3fr 2fr;
+  /* padding-left: 260px; */
   border-top: 3px black solid;
+  border-bottom: 3px black solid;
+  padding-right: 140px;
+  font-size: 20px;
+}
+
+.about-picture-container {  
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 250px;
+    
+  
+}
+
+.about-section {
+  display: grid;
+  align-items: center;
+  justify-content: right;
+  padding-left: 260px;
+  
 }
 
 @media only screen and (max-width: 1080px) {
@@ -199,6 +223,39 @@ body {
     padding-right: 50px;
   }
 }
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding-left: 260px;
+  padding-right: 260px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  grid-column-gap: 40px;
+  text-align: center;
+  align-items: center;
+  
+}
+
+form {
+  display: grid;
+}
+
+input {
+  border-radius: 10px;
+  padding-left: 10px;
+  
+}
+
+textarea {
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.form-header {
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 660px) {
   .headshot {
