@@ -18,10 +18,10 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="home">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#home">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,11 +39,11 @@
               <img
                 class="navlogo"
                 src="./images/whitedownload.png"
-                alt="download button"
+                alt="download resume"
               />
               Resume</a
             >
-            <a class="nav-link active" href="#">
+            <a href="#projects" class="nav-link active" >
               <img
                 class="navlogo"
                 src="./images/gearswhite.png"
@@ -51,15 +51,15 @@
               />
               Featured Projects
             </a>
-            <a class="nav-link active" href="#">
+            <a class="nav-link active" href="#about">
               <img
                 class="navlogo"
                 src="./images/aboutwhite.png"
-                alt="projects logo"
+                alt="about"
               />
               About</a
             >
-            <a class="nav-link active" href="#">
+            <a class="nav-link active" href="#contact">
               <img
                 class="navlogo"
                 src="./images/whiteemail.png"
@@ -90,6 +90,7 @@
           </h5>
         </p>
           <div>
+            <a href="#projects" >
             <button type="button" class="btn btn-light main-btn">
               <img
                 class="navlogo"
@@ -97,9 +98,11 @@
                 alt="gear icon"
               />
               Featured Projects
-            </button>
+            </button></a>
+            <a href="#contact">
 
             <button type="button" class="btn btn-light">
+              
               <img
                 class="navlogo"
                 src="./images/email-svgrepo-com.svg"
@@ -107,6 +110,8 @@
               />
               Let's Chat!
             </button>
+          
+          </a>
           </div>
         </div>
         
@@ -114,11 +119,11 @@
       
     </div>
 <!-- featured projects div incase the fixed navbar scrolls to the wrong spot on the page -->
-    <h4 class ="featured-projects"> Featured Projects</h4>
+    <h4 class ="featured-projects" id="projects"> </h4>
 
 <!-- container for featured projects -->
 
-      <div class="projects-container">
+      <div class="projects-container" >
 
         <!-- PotLuck Card  -->
 
@@ -190,12 +195,8 @@
           
           <div class="project-description">
             <p>
-              $ales Tracker is a mobile application designed for quickly recording insurance sales on the go.  
-              <p>
-                
-              </p>
-  
-            
+              Sales Tracker is a mobile application designed for quickly recording insurance sales on the go.  
+              <p></p>
               <img
               class="techlogo"
               src="./images/reactlogo.png"
@@ -249,7 +250,7 @@
           </div>
         </div>
 
-        <div class="project-container" id="project1">
+        <div class="project-container" id="project3">
           <div class="project-card" >
             <a href="">
             <img
@@ -315,15 +316,47 @@
 
 
        </div>
-        
-          </div>
+
+       <!-- about page  -->
+       <div class="about-hero" id="about">
+        <div class="container headshot-container">
+          <img
+            src="./images/jordanwallheadshot.jpg"
+            class="headshot"
+            alt="Jordan's Face"
+          />
+        </div>
+        <div class="about-section">This is the about section. It does not have to look pretty now. I will fill it up to the brim with lovely facts that will make people want to hire me. All I need to do is adjust the padding of the text div, but I cannot do that until I have another picture of myself.</div>
+      </div>
+      <div class="contact-section" id="contact">
+
+            <div class="contact-form">
+              <form action="https://formsubmit.co/12ff584a74fb187937ee8ecc8685bd2f" method="POST">
+                <h3>Talk to me motherfucker</h3>
+                <input type="text" id="name" name = "name" placeholder="Your Name" required>
+                <input type="email" id="email" name = "email" placeholder="Your Email" required>
+                <textarea id="message"  rows="4" name = "message "placeholder="I want you to want me"></textarea>
+                <input type="hidden" name="_subject" value="New contact from portfolio website!">
+                <button type="submit">Send it</button>
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+
+              </form>
+            </div>
+            
+    
           
+           
+    
+            
+    
+              </div>
         
         
         </div>
 
       </div>
-
+      <script src="./script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -334,5 +367,7 @@
       integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
       crossorigin="anonymous"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
   </body>
 </html>
